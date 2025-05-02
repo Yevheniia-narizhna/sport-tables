@@ -1,0 +1,45 @@
+@use "mixins";
+
+.sidebar-icon {
+  width: 16px;
+  height: 16px;
+}
+.side-el {
+  border-top: 1px solid #eeeeee;
+}
+#last-el {
+  border-bottom: 1px solid #eeeeee;
+}
+.trend-icon {
+  width: 14px;
+  height: 14px;
+}
+.cont-title-video {
+  display: flex;
+  align-items: center;
+}
+.video-icon {
+  fill: #0000008a;
+  width: 13px;
+  height: 9px;
+}
+.video-cont {
+  color: #ffffff;
+  width: 336px;
+  height: 202px;
+  background-image: url("/public/img/girl-mob.png");
+
+  @include mixins.viewport-desktop {
+    width: 300px;
+    height: 180px;
+    background-image: url("/public/img/girl-desc.png");
+  }
+}
+.btn-video-icon {
+  width: 40px;
+  height: 40px;
+}
+.comm-icon {
+  width: 16px;
+  height: 16px;
+}

@@ -14,3 +14,35 @@ body {
   color: #000000e5;
   background-color: #fadb00;
 }
+.list {
+  display: flex;
+}
+#el::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: url("/public/img/ext.png") no-repeat center center;
+  background-size: contain;
+  margin-right: 8px;
+  fill: currentColor;
+}
+.league {
+  border: 1px solid #eeeeee;
+}
+.list-title {
+  display: flex;
+  border-top: 1px solid #eeeeee;
+}
+.features-icon {
+  width: 6px;
+  height: 6px;
+}
+.cont-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 336px;
+  height: 76px;
+}

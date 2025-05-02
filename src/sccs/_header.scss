@@ -42,27 +42,3 @@
     display: none;
   }
 }
-.list {
-  display: flex;
-}
-#el::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: url("/public/img/ext.png") no-repeat center center;
-  background-size: contain;
-  margin-right: 8px;
-  fill: currentColor;
-}
-.league {
-  border: 1px solid #eeeeee;
-}
-.list-title {
-  display: flex;
-  border-top: 1px solid #eeeeee;
-}
-.features-icon {
-  width: 6px;
-  height: 6px;
-}
