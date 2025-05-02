@@ -1,0 +1,11 @@
+@mixin viewport-desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin viewport-mobile {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}

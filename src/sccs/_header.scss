@@ -1,0 +1,68 @@
+@use "variables" as v;
+@use "mixins";
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 998;
+  background: v.$background-color;
+  height: 52px;
+
+  @include mixins.viewport-desktop {
+    height: 56px;
+  }
+}
+.burger {
+  width: 24px;
+  height: 24px;
+}
+.logo {
+  width: 83px;
+  height: 28px;
+
+  @include mixins.viewport-desktop {
+    width: 87px;
+  }
+}
+.radio,
+.star,
+.notific,
+.comment {
+  width: 22px;
+  height: 22px;
+}
+.radio-cont {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  @include mixins.viewport-desktop {
+    display: none;
+  }
+}
+.list {
+  display: flex;
+}
+#el::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: url("/public/img/ext.png") no-repeat center center;
+  background-size: contain;
+  margin-right: 8px;
+  fill: currentColor;
+}
+.league {
+  border: 1px solid #eeeeee;
+}
+.list-title {
+  display: flex;
+  border-top: 1px solid #eeeeee;
+}
+.features-icon {
+  width: 6px;
+  height: 6px;
+}

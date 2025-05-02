@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon16x.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon32x.png" sizes="32x32" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <svg class="burger">
+          <use href="/symbol-defs.svg#icon-menu" />
+        </svg>
+        <svg class="logo">
+          <use href="/symbol-defs.svg#icon-Logo_white" />
+        </svg>
+      </div>
+      <div class="radio-cont">
+        <img class="radio" src="/img/radio_button.png" alt="Radio button" />
+        <h3>Матчи</h3>
+      </div>
+      <div>
+        <svg class="star">
+          <use href="/symbol-defs.svg#icon-star_border_black_24dp" />
+        </svg>
+        <svg class="notific">
+          <use href="/symbol-defs.svg#icon-notifications_black_24dp" />
+        </svg>
+        <svg class="comment">
+          <use href="/symbol-defs.svg#icon-comment-24px" />
+        </svg>
+      </div>
+    </header>
+    <main class="page">
+      <div class="content">
+        <section class="tournir">
+          <ul class="list">
+            <li class="element">Главная</li>
+            <li class="element" id="el">Футбол</li>
+          </ul>
+          <div class="league">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="/img/Rectangle-desc.png"
+              />
+              <img src="/img/Rectangle-mob.png" alt="" />
+            </picture>
+            <div>
+              <h1>Украинская Премьер-Лига</h1>
+              <p>Сезон 2019/2020 32-й тур</p>
+              <ul class="list-title">
+                <li>Главная</li>
+                <li>Таблица</li>
+                <li>Календарь</li>
+                <li>Бомбардиры</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="tabs-section">
+          <h2>Турнирная таблица</h2>
+          <div class="tabs">
+            <button class="tab" data-type="general">Загальна</button>
+            <button class="tab" data-type="home">Дома</button>
+            <button class="tab" data-type="away">В гостях</button>
+          </div>
+        </section>
+
+        <section class="tables" id="tables-container">
+          <div id="general-table" class="table-wrapper"></div>
+          <div id="home-table" class="table-wrapper hidden"></div>
+          <div id="away-table" class="table-wrapper hidden"></div>
+        </section>
+      </div>
+      <div>
+        <h4>Квалификация</h4>
+        <ul class="features">
+          <li>
+            <svg class="features-icon">
+              <use href="/public/symbol-defs.svg#icon-rectangle2400" />
+            </svg>
+            Швидкість
+          </li>
+          <li>
+            <svg class="features-icon">
+              <use href="/public/symbol-defs.svg#icon-rectangle2401" />
+            </svg>
+            Безпека
+          </li>
+          <li>
+            <svg class="features-icon">
+              <use href="/public/symbol-defs.svg#icon-rectangle2402" />
+            </svg>
+            Підтримка
+          </li>
+          <li>
+            <svg class="features-icon">
+              <use href="/public/symbol-defs.svg#icon-rectangle2403" />
+            </svg>
+            Якість
+          </li>
+        </ul>
+      </div>
+      <aside class="sidebar">
+        <!-- Новини, Тренди, Відео -->
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2025 Всі права захищені</p>
+    </footer>
+    <!-- <div id="app"></div> -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
