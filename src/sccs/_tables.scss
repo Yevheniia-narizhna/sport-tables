@@ -53,8 +53,11 @@
 .logo-td img {
   width: 24px;
   height: 24px;
+  object-fit: contain;
 }
 .rank-td {
+  position: relative;
+  cursor: pointer;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -81,4 +84,24 @@
   @include mixins.viewport-desktop {
     background-color: #3188ff;
   }
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 9999;
+  top: 110%;
+  left: 70px;
+  transform: translateX(-50%);
+  width: 130px;
+}
+.rank-td:hover .tooltip {
+  display: block;
+}
+.last .tooltip {
+  top: -150%;
 }

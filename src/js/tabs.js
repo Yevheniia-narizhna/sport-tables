@@ -69,16 +69,16 @@ const renderTable = async (type, targetTable) => {
             ? "second"
             : index + 1 === 3
             ? "third"
-            : "";
+            : "last";
 
         return `<tr>
-        <td> <span class="rank-td ${rankClass}">${index + 1}</span></td>
+        <td> <span class="rank-td ${rankClass}">${
+          index + 1
+        }<span class="tooltip">Лига чемпионов</span></span></td>
           <td class="logo-td"><img src="${t.logo}" alt="${t.name.charAt(
           0
         )}" width="30" /></td>
-          <td class="team-name-td">${t.name}<span class="tooltip">${
-          t.description || ""
-        }</span></td>
+          <td class="team-name-td">${t.name}</td>
           <td class="games-td">${t.games}</td>
           <td class="wins-td">${t.wins}</td>
           <td class="draws-td">${t.draws}</td>

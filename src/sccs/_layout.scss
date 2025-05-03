@@ -148,6 +148,7 @@ body {
   flex-direction: column;
   padding-top: 32px;
   gap: 9px;
+  padding-bottom: 16px;
 
   @include mixins.viewport-desktop {
     flex-direction: row;
@@ -155,6 +156,7 @@ body {
     padding-top: 28px;
     padding-right: 16px;
     justify-content: space-between;
+    padding-bottom: 12px;
   }
 }
 .btn-gen {
