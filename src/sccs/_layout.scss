@@ -1,10 +1,42 @@
+@use "mixins";
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
+.cont-wrapp-title {
+  display: flex;
+  padding: 16px 20px;
 
+  @include mixins.viewport-mobile {
+    display: none;
+  }
+}
+.icon-ball {
+  width: 16px;
+  height: 16px;
+  padding-right: 8px;
+}
+.footb {
+  border-right: 1px solid #eeeeee;
+  padding-right: 16px;
+}
+.medal {
+  padding-left: 16px;
+  padding-right: 8px;
+}
+.layout-cont {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+
+  @include mixins.viewport-desktop {
+    flex-direction: row;
+    padding-left: 20px;
+  }
+}
 .hidden {
   display: none;
 }
@@ -13,6 +45,16 @@ body {
   font-weight: bold;
   color: #000000e5;
   background-color: #fadb00;
+}
+.border-wrap {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 16px 20px;
+
+  @include mixins.viewport-mobile {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 .list {
   display: flex;
@@ -29,10 +71,65 @@ body {
 }
 .league {
   border: 1px solid #eeeeee;
+  // padding: 16px 16px 9px 16px;
+  @include mixins.viewport-desktop {
+    padding: 24px 24px 11px 24px;
+  }
+}
+.ukr-league {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  @include mixins.viewport-desktop {
+    padding-left: 24px;
+  }
+}
+.img-title {
+  display: flex;
+  padding: 16px 16px 24px 16px;
+  @include mixins.viewport-desktop {
+    padding: 0;
+  }
 }
 .list-title {
   display: flex;
+  justify-content: space-around;
+  gap: 12px;
   border-top: 1px solid #eeeeee;
+  padding: 11px 0px 11px 0px;
+  color: #0000008a;
+  font-weight: 400;
+  font-size: 12px;
+  @include mixins.viewport-desktop {
+    border-top: none;
+    padding: 0;
+  }
+}
+.first-li {
+  padding-left: 16px;
+  @include mixins.viewport-desktop {
+    padding-left: 128px;
+  }
+}
+.active-li {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  color: #000000b2;
+}
+.active-li::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffce00;
+}
+.desc-vis {
+  @include mixins.viewport-mobile {
+    display: none;
+  }
 }
 .features-icon {
   width: 6px;
@@ -45,4 +142,31 @@ body {
   flex-wrap: wrap;
   width: 336px;
   height: 76px;
+}
+.tabs-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  gap: 9px;
+
+  @include mixins.viewport-desktop {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 28px;
+    padding-right: 16px;
+    justify-content: space-between;
+  }
+}
+.btn-gen {
+  width: 85px;
+}
+.btn-hom {
+  width: 61px;
+}
+.btn-aw {
+  width: 79px;
+}
+.icon-td {
+  width: 18px;
+  height: 18px;
 }

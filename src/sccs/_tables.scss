@@ -1,0 +1,84 @@
+@use "mixins";
+
+.head-tabl {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  //   width: 100%;
+  height: 28px;
+}
+// .table-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 8px;
+// }
+.group-table {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.form-td,
+.tabl-5 {
+  @include mixins.viewport-mobile {
+    display: none;
+  }
+}
+.group-th {
+  text-align: start;
+  padding-left: 12px;
+}
+.header-short {
+  display: none;
+  @include mixins.viewport-mobile {
+    display: inline;
+  }
+}
+.header-full {
+  display: none;
+  @include mixins.viewport-desktop {
+    display: inline;
+  }
+}
+.team-name-td {
+  text-align: start;
+}
+.team-name-td {
+  @include mixins.viewport-mobile-mini {
+    max-width: 96px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.logo-td img {
+  width: 24px;
+  height: 24px;
+}
+.rank-td {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+}
+.rank-td.first,
+.rank-td.second,
+.rank-td.third {
+  color: #ffffff;
+  border-radius: 50%;
+}
+.rank-td.first,
+.rank-td.second {
+  background-color: #2173d2;
+  @include mixins.viewport-desktop {
+    background-color: #00b86c;
+  }
+}
+
+.rank-td.third {
+  background-color: #2ea2e5;
+  @include mixins.viewport-desktop {
+    background-color: #3188ff;
+  }
+}

@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div>
+      <div class="logo-cont">
         <svg class="burger">
           <use href="/symbol-defs.svg#icon-menu" />
         </svg>
@@ -17,122 +17,147 @@
           <use href="/symbol-defs.svg#icon-Logo_white" />
         </svg>
       </div>
-      <div class="radio-cont">
-        <img class="radio" src="/img/radio_button.png" alt="Radio button" />
-        <h3>Матчи</h3>
-      </div>
-      <div>
-        <svg class="star">
-          <use href="/symbol-defs.svg#icon-star_border_black_24dp" />
-        </svg>
-        <svg class="notific">
-          <use href="/symbol-defs.svg#icon-notifications_black_24dp" />
-        </svg>
+      <div class="icons-header">
+        <div class="radio-cont">
+          <img class="radio" src="/img/radio_button.png" alt="Radio button" />
+          <h3>Матчи</h3>
+        </div>
+
+        <div class="star-wrapper">
+          <svg class="star">
+            <use href="/symbol-defs.svg#icon-star_border_black_24dp" />
+          </svg>
+          <span class="circle"></span>
+        </div>
+
+        <div class="notification-wrapper">
+          <svg class="notific">
+            <use href="/symbol-defs.svg#icon-notifications_black_24dp" />
+          </svg>
+          <span class="badge">2</span>
+        </div>
+
         <svg class="comment">
           <use href="/symbol-defs.svg#icon-comment-24px" />
         </svg>
+
+        <div class="name">D</div>
       </div>
     </header>
-    <main class="page">
-      <div class="content">
-        <section class="tournir">
-          <ul class="list">
-            <li class="element">Главная</li>
-            <li class="element" id="el">Футбол</li>
-          </ul>
-          <div class="league">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="/img/Rectangle-desc.png"
-              />
-              <img src="/img/Rectangle-mob.png" alt="" />
-            </picture>
-            <div>
-              <h1>Украинская Премьер-Лига</h1>
-              <p>Сезон 2019/2020 32-й тур</p>
+    <div class="cont-wrapp-title">
+      <img class="icon-ball" src="/img/ball.png" alt="ball" />
+      <p class="footb">ФУТБОЛ</p>
+      <p class="medal">Зачет медалей</p>
+      <p class="medal">Рейтинги</p>
+    </div>
+    <div class="border-wrap">
+      <ul class="list">
+        <li class="element">Главная</li>
+        <li class="element" id="el">Футбол</li>
+      </ul>
+    </div>
+    <div class="layout-cont">
+      <main class="page">
+        <div class="content">
+          <section class="tournir">
+            <div class="league">
+              <div class="img-title">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="/img/Rectangle-desc.png"
+                  />
+                  <img src="/img/Rectangle-mob.png" alt="" />
+                </picture>
+                <div class="ukr-league">
+                  <h1>Украинская Премьер-Лига</h1>
+                  <p>Сезон 2019/2020 32-й тур</p>
+                </div>
+              </div>
               <ul class="list-title">
-                <li>Главная</li>
-                <li>Таблица</li>
+                <li class="first-li">Главная</li>
+                <li class="active-li">Таблица</li>
                 <li>Календарь</li>
                 <li>Бомбардиры</li>
+                <li class="desc-vis">Зрители</li>
+                <li class="desc-vis">Трансферы</li>
               </ul>
             </div>
+          </section>
+          <div class="tabs-section">
+            <h2>Турнирная таблица</h2>
+            <div class="tabs">
+              <button class="tab btn-gen" data-type="general">Загальна</button>
+              <button class="tab btn-hom" data-type="home">Дома</button>
+              <button class="tab btn-aw" data-type="away">В гостях</button>
+            </div>
           </div>
-        </section>
-        <section class="tabs-section">
-          <h2>Турнирная таблица</h2>
-          <div class="tabs">
-            <button class="tab" data-type="general">Загальна</button>
-            <button class="tab" data-type="home">Дома</button>
-            <button class="tab" data-type="away">В гостях</button>
-          </div>
-        </section>
 
-        <section class="tables" id="tables-container">
-          <div id="general-table" class="table-wrapper"></div>
-          <div id="home-table" class="table-wrapper hidden"></div>
-          <div id="away-table" class="table-wrapper hidden"></div>
-        </section>
-      </div>
-      <div>
-        <h4>Квалификация</h4>
-        <ul class="features">
-          <li>
-            <svg class="features-icon">
-              <use href="/public/symbol-defs.svg#icon-rectangle2400" />
-            </svg>
-            Швидкість
-          </li>
-          <li>
-            <svg class="features-icon">
-              <use href="/public/symbol-defs.svg#icon-rectangle2401" />
-            </svg>
-            Безпека
-          </li>
-          <li>
-            <svg class="features-icon">
-              <use href="/public/symbol-defs.svg#icon-rectangle2402" />
-            </svg>
-            Підтримка
-          </li>
-          <li>
-            <svg class="features-icon">
-              <use href="/public/symbol-defs.svg#icon-rectangle2403" />
-            </svg>
-            Якість
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4>Сокращения</h4>
-        <div class="cont-wrap">
-          <div>
-            <span>O</span>
-            <span>Очки</span>
-          </div>
-          <div>
-            <span>И</span>
-            <span>Игры</span>
-          </div>
-          <div>
-            <span>З-П</span>
-            <span>Забитые - пропущенные</span>
-          </div>
-          <div>
-            <span>В</span>
-            <span>Выигрыш</span>
-          </div>
-          <div>
-            <span>Н</span>
-            <span>Ничья</span>
-          </div>
-          <div>
-            <span>П</span>
-            <span>Поражение</span>
+          <section class="tables" id="tables-container">
+            <div id="general-table" class="table-wrapper"></div>
+            <div id="home-table" class="table-wrapper hidden"></div>
+            <div id="away-table" class="table-wrapper hidden"></div>
+          </section>
+        </div>
+        <div>
+          <h4>Квалификация</h4>
+          <ul class="features">
+            <li>
+              <svg class="features-icon">
+                <use href="/public/symbol-defs.svg#icon-rectangle2400" />
+              </svg>
+              Швидкість
+            </li>
+            <li>
+              <svg class="features-icon">
+                <use href="/public/symbol-defs.svg#icon-rectangle2401" />
+              </svg>
+              Безпека
+            </li>
+            <li>
+              <svg class="features-icon">
+                <use href="/public/symbol-defs.svg#icon-rectangle2402" />
+              </svg>
+              Підтримка
+            </li>
+            <li>
+              <svg class="features-icon">
+                <use href="/public/symbol-defs.svg#icon-rectangle2403" />
+              </svg>
+              Якість
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Сокращения</h4>
+          <div class="cont-wrap">
+            <div>
+              <span>O</span>
+              <span>Очки</span>
+            </div>
+            <div>
+              <span>И</span>
+              <span>Игры</span>
+            </div>
+            <div>
+              <span>З-П</span>
+              <span>Забитые - пропущенные</span>
+            </div>
+            <div>
+              <span>В</span>
+              <span>Выигрыш</span>
+            </div>
+            <div>
+              <span>Н</span>
+              <span>Ничья</span>
+            </div>
+            <div>
+              <span>П</span>
+              <span>Поражение</span>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
       <aside class="sidebar">
         <h2>Главные новости</h2>
         <div>
@@ -218,10 +243,10 @@
         </ul>
         <div>
           <div class="cont-title-video">
-          <h2>Видео</h2>
-          <svg class="video-icon">
-            <use href="/public/symbol-defs.svg#icon-Vector2" />
-          </svg>
+            <h2>Видео</h2>
+            <svg class="video-icon">
+              <use href="/public/symbol-defs.svg#icon-Vector2" />
+            </svg>
           </div>
           <div class="video-cont">
             <div>
@@ -246,7 +271,7 @@
           </div>
         </div>
       </aside>
-    </main>
+    </div>
     <!-- <footer>
       <p>&copy; 2025 Всі права захищені</p>
     </footer> -->

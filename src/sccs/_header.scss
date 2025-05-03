@@ -4,13 +4,34 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 998;
   background: v.$background-color;
   height: 52px;
+  padding: 12px 14px;
+  box-sizing: border-box;
 
   @include mixins.viewport-desktop {
     height: 56px;
+  }
+}
+.logo-cont {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  @include mixins.viewport-desktop {
+    gap: 20px;
+  }
+}
+.icons-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  @include mixins.viewport-desktop {
+    gap: 12px;
   }
 }
 .burger {
@@ -27,11 +48,51 @@
 }
 .radio,
 .star,
-.notific,
-.comment {
+.notific {
   width: 22px;
   height: 22px;
 }
+
+.star-wrapper,
+.notification-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+.circle {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: #fadb00;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  @include mixins.viewport-mobile {
+    display: none;
+  }
+}
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff4122;
+  color: #ffffff;
+  border: 2px solid #000000;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  line-height: 1;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mixins.viewport-mobile {
+    display: none;
+  }
+}
+
 .radio-cont {
   display: flex;
   align-items: center;
@@ -39,6 +100,27 @@
   font-weight: 600;
   font-size: 14px;
   @include mixins.viewport-desktop {
+    display: none;
+  }
+}
+.comment {
+  width: 24px;
+  height: 24px;
+  @include mixins.viewport-mobile {
+    display: none;
+  }
+}
+.name {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  background-color: #31c26b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mixins.viewport-mobile {
     display: none;
   }
 }

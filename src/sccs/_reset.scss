@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -11,4 +15,28 @@ input {
   margin-block-start: 0;
   margin-block-end: 0;
   list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  // padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  height: 32px;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-spacing: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+td {
+  text-align: center;
+  height: 36px;
+  vertical-align: middle;
 }
