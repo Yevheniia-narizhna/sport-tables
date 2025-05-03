@@ -1,8 +1,12 @@
 @use "mixins";
 
+.general-title {
+  padding-bottom: 16px;
+}
 .sidebar-icon {
   width: 16px;
   height: 16px;
+  fill: #00000061;
 }
 .side-el {
   border-top: 1px solid #eeeeee;
@@ -17,13 +21,18 @@
 .cont-title-video {
   display: flex;
   align-items: center;
+  padding-top: 36px;
+  padding-bottom: 16px;
+  gap: 7px;
 }
 .video-icon {
   fill: #0000008a;
-  width: 13px;
-  height: 9px;
+  width: 17px;
+  height: 13px;
+  padding-top: 2px;
 }
 .video-cont {
+  padding: 12px;
   color: #ffffff;
   max-width: 336px;
   height: 202px;
@@ -42,4 +51,59 @@
 .comm-icon {
   width: 16px;
   height: 16px;
+}
+.side-el {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  padding: 16px 0 16px 0;
+  gap: 25px;
+}
+.trend-title {
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+.trend-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  height: 92px;
+  gap: 8px;
+}
+.trend-li {
+  max-height: 32px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 16px 0 10px;
+  background-color: #0000000d;
+  border-radius: 16px;
+}
+.footb-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.footb-green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #25bb1e;
+}
+.side-text {
+  padding-top: 54px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.comment-cont {
+  display: flex;
+  padding-top: 12px;
+  gap: 15px;
+  color: #ffffffb2;
+}
+.icon-cont-side {
+  display: flex;
+  gap: 2px;
 }

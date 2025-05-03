@@ -9,7 +9,9 @@ h4,
 p,
 ul,
 li,
-input {
+input,
+td,
+th {
   margin: 0;
   padding: 0;
   margin-block-start: 0;
@@ -27,16 +29,37 @@ button {
 table {
   display: table;
   border-collapse: separate;
+  border-spacing: 0;
   box-sizing: border-box;
   text-indent: initial;
   unicode-bidi: isolate;
   border-spacing: 0;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // border-radius: 6px;
+  // overflow: hidden;
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 td {
   text-align: center;
   height: 36px;
   vertical-align: middle;
 }
+tbody tr {
+  border-bottom: 1px solid #eeeeee;
+}
+th {
+  border: none;
+  text-align: center;
+}
+// thead {
+//   border-bottom: none !important;
+//   box-shadow: none !important;
+// }
+
+// thead tr,
+// thead th {
+//   border: none !important;
+//   box-shadow: none !important;
+// }
+// thead tr:last-child {
+//   border-bottom: none !important;
+// }

@@ -3,6 +3,7 @@
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
   margin: 0;
   padding: 0;
 }
@@ -59,6 +60,13 @@ body {
 .list {
   display: flex;
 }
+.season {
+  color: #00000061;
+  padding-top: 8px;
+}
+.element {
+  padding-right: 12px;
+}
 #el::before {
   content: "";
   display: inline-block;
@@ -99,7 +107,7 @@ body {
   padding: 11px 0px 11px 0px;
   color: #0000008a;
   font-weight: 400;
-  font-size: 12px;
+  // font-size: 12px;
   @include mixins.viewport-desktop {
     border-top: none;
     padding: 0;
@@ -135,14 +143,7 @@ body {
   width: 6px;
   height: 6px;
 }
-.cont-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  flex-wrap: wrap;
-  width: 336px;
-  height: 76px;
-}
+
 .tabs-section {
   display: flex;
   flex-direction: column;
@@ -171,4 +172,45 @@ body {
 .icon-td {
   width: 18px;
   height: 18px;
+}
+.cont-qualific {
+  padding-top: 18px;
+  padding-bottom: 12px;
+}
+.qualific-title,
+.abbr-title {
+  padding-bottom: 6px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.features-li {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.cont-wrap-abbr {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
+  max-width: 336px;
+  height: 108px;
+  padding-bottom: 32px;
+}
+.letter {
+  display: inline-block;
+  width: 28px;
+  padding-right: 8px;
+  font-weight: 500;
+}
+.long-abbr {
+  display: inline-block;
+  width: 134px;
+}
+.cont-long {
+  display: flex;
+  align-items: start;
 }

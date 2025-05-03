@@ -16,6 +16,10 @@
 .group-table {
   width: 100%;
   margin-bottom: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
 }
 .form-td,
 .tabl-5 {
@@ -41,6 +45,7 @@
 }
 .team-name-td {
   text-align: start;
+  font-size: 12px;
 }
 .team-name-td {
   @include mixins.viewport-mobile-mini {
@@ -104,4 +109,32 @@
 }
 .last .tooltip {
   top: -150%;
+}
+.games-td,
+.wins-td,
+.draws-td,
+.loses-td,
+.points-td,
+.score-td {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.games-td,
+.wins-td,
+.draws-td,
+.loses-td,
+.points-td {
+  width: 20px;
+}
+.score-td {
+  width: 48px;
+}
+.tabl-6,
+.points-td {
+  padding-right: 6px;
+  width: 26px;
+}
+.points-td {
+  font-weight: 700;
 }
