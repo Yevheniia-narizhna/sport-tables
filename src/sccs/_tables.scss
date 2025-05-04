@@ -7,6 +7,9 @@
   font-weight: 500;
   //   width: 100%;
   height: 28px;
+  @include mixins.viewport-desktop {
+    font-weight: 400;
+  }
 }
 // .table-wrapper {
 //   display: flex;
@@ -23,6 +26,7 @@
 }
 .form-td,
 .tabl-5 {
+  width: 134px;
   @include mixins.viewport-mobile {
     display: none;
   }
@@ -119,6 +123,9 @@
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  @include mixins.viewport-desktop {
+    font-size: 15px;
+  }
 }
 .games-td,
 .wins-td,
@@ -126,9 +133,15 @@
 .loses-td,
 .points-td {
   width: 20px;
+  @include mixins.viewport-desktop {
+    width: 24px;
+  }
 }
 .score-td {
   width: 48px;
+  @include mixins.viewport-desktop {
+    width: 52px;
+  }
 }
 .tabl-6,
 .points-td {

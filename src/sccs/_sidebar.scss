@@ -1,5 +1,8 @@
 @use "mixins";
 
+.sidebar {
+  width: 300px;
+}
 .general-title {
   padding-bottom: 16px;
 }
@@ -71,6 +74,7 @@
   gap: 8px;
 }
 .trend-li {
+  font-size: 14px;
   max-height: 32px;
   display: flex;
   gap: 8px;
@@ -96,6 +100,9 @@
   padding-top: 54px;
   font-size: 16px;
   font-weight: 500;
+  @include mixins.viewport-desktop {
+    padding-top: 32px;
+  }
 }
 .comment-cont {
   display: flex;
