@@ -21,4 +21,4 @@
           <td class="form-td">${m}</td>
           <td class="points-td">${r.points}</td>
         </tr>`}).join("");c.innerHTML=h+`<tbody>${u}</tbody>`,e.appendChild(c)}),p[n]=!0};document.addEventListener("DOMContentLoaded",async()=>{document.querySelector('.tab[data-type="general"]').classList.add("active");const e=document.getElementById("general-table");p.general||await f("general",e),e.classList.remove("hidden");const d=document.querySelectorAll(".tab");d.forEach(o=>{o.addEventListener("click",async()=>{d.forEach(a=>a.classList.remove("active")),o.classList.add("active");const s=o.dataset.type,t=document.getElementById(`${s}-table`);p[s]||await f(s,t),document.querySelectorAll(".table-wrapper").forEach(a=>{a.classList.add("hidden")}),t.classList.remove("hidden")})})});
-//# sourceMappingURL=index-DR6xcnH4.js.map
+//# sourceMappingURL=index-CMe9zaNR.js.map
