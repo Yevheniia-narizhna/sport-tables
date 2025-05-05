@@ -34,13 +34,13 @@ const renderTable = async (type, targetTable) => {
 
   const icons = {
     W: `<svg class="icon-td">
-            <use href="/symbol-defs.svg#icon-Frame9428" />
+            <use href="/sport-tables/symbol-defs.svg#icon-Frame9428" />
           </svg>`,
     D: `<svg class="icon-td">
-            <use href="/symbol-defs.svg#icon-Frame9401" />
+            <use href="/sport-tables/symbol-defs.svg#icon-Frame9401" />
           </svg>`,
     L: `<svg class="icon-td">
-            <use href="/symbol-defs.svg#icon-Frame9425" />
+            <use href="/sport-tables/symbol-defs.svg#icon-Frame9425" />
           </svg>`,
   };
 
