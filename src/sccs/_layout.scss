@@ -44,7 +44,11 @@
 .hidden {
   display: none;
 }
-
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .active {
   font-weight: bold;
   color: v.$black-e5;
@@ -169,7 +173,7 @@
   width: 61px;
 }
 .btn-aw {
-  width: 79px;
+  min-width: 79px;
 }
 .icon-td {
   width: 18px;
