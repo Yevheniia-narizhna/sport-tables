@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/sport-tables/favicon16x.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/sport-tables/favicon32x.png" sizes="32x32" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport</title>
+    <script type="module" crossorigin src="/sport-tables/assets/index-3YWPZ-Oy.js"></script>
+    <link rel="stylesheet" crossorigin href="/sport-tables/assets/index-Cj0bCd4V.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-cont">
+        <svg class="burger">
+          <use href="/sport-tables/symbol-defs.svg#icon-menu" />
+        </svg>
+        <svg class="logo">
+          <use href="/sport-tables/symbol-defs.svg#icon-Logo_white" />
+        </svg>
+      </div>
+      <div class="icons-header">
+        <div class="radio-cont">
+          <img class="radio" src="/sport-tables/img/radio_button.png" alt="Radio button" />
+          <h3>Матчи</h3>
+        </div>
+
+        <div class="star-wrapper">
+          <svg class="star">
+            <use href="/sport-tables/symbol-defs.svg#icon-star_border_black_24dp" />
+          </svg>
+          <span class="circle"></span>
+        </div>
+
+        <div class="notification-wrapper">
+          <svg class="notific">
+            <use href="/sport-tables/symbol-defs.svg#icon-notifications_black_24dp" />
+          </svg>
+          <span class="badge">2</span>
+        </div>
+
+        <svg class="comment">
+          <use href="/sport-tables/symbol-defs.svg#icon-comment-24px" />
+        </svg>
+
+        <div class="name">D</div>
+      </div>
+    </header>
+    <div class="cont-wrapp-title">
+      <img class="icon-ball" src="/sport-tables/img/ball.png" alt="ball" />
+      <p class="footb">ФУТБОЛ</p>
+      <p class="medal">Зачет медалей</p>
+      <p class="medal">Рейтинги</p>
+    </div>
+    <div class="border-wrap">
+      <ul class="list">
+        <li class="element">Главная</li>
+        <li class="element" id="el">Футбол</li>
+      </ul>
+    </div>
+    <div class="layout-cont">
+      <main class="page">
+        <div class="content">
+          <section class="tournir">
+            <div class="league">
+              <div class="img-title">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="/sport-tables/img/Rectangle-desc.png"
+                  />
+                  <img src="/sport-tables/img/Rectangle-mob.png" alt="" />
+                </picture>
+                <div class="ukr-league">
+                  <h1>Украинская Премьер-Лига</h1>
+                  <p class="season">Сезон 2019/2020 32-й тур</p>
+                </div>
+              </div>
+              <ul class="list-title">
+                <li class="first-li">Главная</li>
+                <li class="active-li">Таблица</li>
+                <li>Календарь</li>
+                <li>Бомбардиры</li>
+                <li class="desc-vis">Зрители</li>
+                <li class="desc-vis">Трансферы</li>
+              </ul>
+            </div>
+          </section>
+          <div class="tabs-section">
+            <h2>Турнирная таблица</h2>
+            <div class="tabs">
+              <button class="tab btn-gen" data-type="general">Загальна</button>
+              <button class="tab btn-hom" data-type="home">Дома</button>
+              <button class="tab btn-aw" data-type="away">В гостях</button>
+            </div>
+          </div>
+
+          <section class="tables" id="tables-container">
+            <div id="general-table" class="table-wrapper"></div>
+            <div id="home-table" class="table-wrapper hidden"></div>
+            <div id="away-table" class="table-wrapper hidden"></div>
+          </section>
+        </div>
+        <div class="last-conts">
+          <div class="cont-qualific">
+            <h4 class="qualific-title">Квалификация</h4>
+            <ul class="features">
+              <li class="features-li champ-li">
+                <svg class="features-icon">
+                  <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-rectangle2400" />
+                </svg>
+                <span class="champ">Чемпионы&nbsp;</span>Лига чемпионов УЕФА
+              </li>
+              <li class="features-li">
+                <svg class="features-icon">
+                  <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-rectangle2401" />
+                </svg>
+                Лига чемпионов УЕФА
+              </li>
+              <li class="features-li">
+                <svg class="features-icon">
+                  <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-rectangle2402" />
+                </svg>
+                Лига Европы УЕФА
+              </li>
+              <li class="features-li">
+                <svg class="features-icon">
+                  <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-rectangle2403" />
+                </svg>
+                Понижение
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="abbr-title">Сокращения</h4>
+            <div class="cont-wrap-abbr">
+              <div class="lett-hidd">
+                <span class="letter">O</span>
+                <span>Очки</span>
+              </div>
+              <div class="lett-hidd">
+                <span class="letter">И</span>
+                <span>Игры</span>
+              </div>
+              <div class="cont-long lett-hidd">
+                <span class="letter">З-П</span>
+                <span class="long-abbr">Забитые - пропущенные</span>
+              </div>
+              <div>
+                <span class="letter">В</span>
+                <span>Выигрыш</span>
+              </div>
+              <div>
+                <span class="letter">Н</span>
+                <span>Ничья</span>
+              </div>
+              <div>
+                <span class="letter">П</span>
+                <span>Поражение</span>
+              </div>
+              <div class="lett-visibl">
+                <span class="letter">З-П</span>
+                <span>Забитые - пропущенные</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-cont">
+            <h4 class="form-title">Форма</h4>
+            <div class="form-item">
+              <svg class="icon-td">
+                <use href="/sport-tables/symbol-defs.svg#icon-Frame9428" />
+              </svg>
+              <p>Выигрыш</p>
+            </div>
+            <div class="form-item">
+              <svg class="icon-td">
+                <use href="/sport-tables/symbol-defs.svg#icon-Frame9401" />
+              </svg>
+              <p>Поражение</p>
+            </div>
+            <div class="form-item">
+              <svg class="icon-td">
+                <use href="/sport-tables/symbol-defs.svg#icon-Frame9425" />
+              </svg>
+              <p>Ничья</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="sidebar">
+        <h2 class="general-title">Главные новости</h2>
+        <div>
+          <div class="side-el">
+            <span>
+              <svg class="sidebar-icon">
+                <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-Vector3" />
+              </svg>
+            </span>
+            <span
+              >Артем ФРАНКОВ: «Я не сторонник перехода на систему
+              весна-осень»</span
+            >
+          </div>
+          <div class="side-el">
+            <span>
+              <svg class="sidebar-icon">
+                <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-Vector3" />
+              </svg>
+            </span>
+            <span
+              >Welcome to the team! Макгрегор поприветствовал Пакьяо в своей
+              команде</span
+            >
+          </div>
+          <div class="side-el">
+            <span>
+              <svg class="sidebar-icon">
+                <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-Vector3" />
+              </svg>
+            </span>
+            <span
+              >КАРИКАТУРА ДНЯ. Сэйв столетия от Бэнкса после удара Пеле</span
+            >
+          </div>
+          <div class="side-el">
+            <span>
+              <svg class="sidebar-icon">
+                <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-Vector3" />
+              </svg>
+            </span>
+            <span>Евгений Лунин стал игроком месяца в Овьедо</span>
+          </div>
+          <div class="side-el" id="last-el">
+            <span>
+              <svg class="sidebar-icon">
+                <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-Vector3" />
+              </svg>
+            </span>
+            <span
+              >Welcome to the team! Макгрегор поприветствовал Пакьяо в своей
+              команде</span
+            >
+          </div>
+        </div>
+        <h2 class="trend-title">Тренды</h2>
+
+        <ul class="trend-list">
+          <li class="trend-li">
+            <svg class="trend-icon">
+              <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-lightning1" />
+            </svg>
+            Коронавирус
+          </li>
+          <li class="trend-li">
+            <svg class="trend-icon">
+              <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-lightning1" />
+            </svg>
+            Рейтинг клубов
+          </li>
+          <li class="trend-li">
+            <svg class="trend-icon">
+              <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-lightning1" />
+            </svg>
+            Трансферы лета
+          </li>
+          <li class="trend-li">
+            <svg class="trend-icon">
+              <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-lightning1" />
+            </svg>
+            Барселона
+          </li>
+        </ul>
+        <div>
+          <div class="cont-title-video">
+            <h2>Видео</h2>
+            <svg class="video-icon">
+              <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-Vector2" />
+            </svg>
+          </div>
+          <div class="video-cont">
+            <div class="footb-cont">
+              <h4 class="footb-green">Футбол</h4>
+              <svg class="btn-video-icon">
+                <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-Group112" />
+              </svg>
+            </div>
+            <p class="side-text">
+              Руслан КОСТЫШИН: «Футболисты выступили с инициативой сократить
+              зарплаты»
+            </p>
+            <div class="comment-cont">
+              <p>28 октября 2020</p>
+              <div class="icon-cont-side">
+                <svg class="comm-icon">
+                  <use href="/sport-tables/assets/symbol-defs-C2pDlv7H.svg#icon-comment-24" />
+                </svg>
+                <p>999</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
