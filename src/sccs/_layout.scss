@@ -1,12 +1,10 @@
 @use "mixins";
+@use "variables" as v;
 
-body {
-  background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  color: #000000cc;
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
+.page {
+  @include mixins.viewport-desktop {
+    width: 100%;
+  }
 }
 .cont-wrapp-title {
   display: flex;
@@ -20,17 +18,16 @@ body {
 .icon-ball {
   width: 16px;
   height: 16px;
-  // padding-right: 8px;
 }
 .footb {
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid v.$border-color;
   padding-right: 16px;
   padding-left: 8px;
 }
 .medal {
   padding-left: 16px;
   padding-right: 8px;
-  color: #000000b2;
+  color: v.$black-b2;
 }
 .layout-cont {
   display: flex;
@@ -40,6 +37,7 @@ body {
   @include mixins.viewport-desktop {
     flex-direction: row;
     padding: 24px 20px;
+    justify-content: space-between;
     gap: 20px;
   }
 }
@@ -49,12 +47,12 @@ body {
 
 .active {
   font-weight: bold;
-  color: #000000e5;
-  background-color: #fadb00;
+  color: v.$black-e5;
+  background-color: v.$yellow-color;
 }
 .border-wrap {
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid v.$border-color;
+  border-bottom: 1px solid v.$border-color;
   padding: 16px 20px;
 
   @include mixins.viewport-mobile {
@@ -66,7 +64,7 @@ body {
   display: flex;
 }
 .season {
-  color: #00000061;
+  color: v.$black-61;
   padding-top: 8px;
 }
 .element {
@@ -83,8 +81,7 @@ body {
   fill: currentColor;
 }
 .league {
-  border: 1px solid #eeeeee;
-  // padding: 16px 16px 9px 16px;
+  border: 1px solid v.$border-color;
   @include mixins.viewport-desktop {
     padding: 24px 24px 11px 24px;
   }
@@ -108,9 +105,9 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 12px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid v.$border-color;
   padding: 11px 0px 11px 0px;
-  color: #0000008a;
+  color: v.$black-8a;
   font-weight: 400;
   // font-size: 12px;
   @include mixins.viewport-desktop {
@@ -121,14 +118,14 @@ body {
 .first-li {
   padding-left: 16px;
   @include mixins.viewport-desktop {
-    padding-left: 128px;
+    padding-left: 104px;
   }
 }
 .active-li {
   position: relative;
   display: inline-block;
   font-weight: 500;
-  color: #000000b2;
+  color: v.$black-b2;
 }
 .active-li::before {
   content: "";
@@ -137,7 +134,7 @@ body {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #ffce00;
+  background-color: v.$active-color;
 }
 .desc-vis {
   @include mixins.viewport-mobile {
@@ -240,7 +237,7 @@ body {
 .last-conts {
   @include mixins.viewport-desktop {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
     padding-top: 18px;
   }
 }

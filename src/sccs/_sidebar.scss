@@ -1,21 +1,19 @@
 @use "mixins";
+@use "variables" as v;
 
-.sidebar {
-  width: 300px;
-}
 .general-title {
   padding-bottom: 16px;
 }
 .sidebar-icon {
   width: 16px;
   height: 16px;
-  fill: #00000061;
+  fill: v.$black-61;
 }
 .side-el {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid v.$border-color;
 }
 #last-el {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid v.$border-color;
 }
 .trend-icon {
   width: 14px;
@@ -29,14 +27,14 @@
   gap: 7px;
 }
 .video-icon {
-  fill: #0000008a;
+  fill: v.$black-8a;
   width: 17px;
   height: 13px;
   padding-top: 2px;
 }
 .video-cont {
   padding: 12px;
-  color: #ffffff;
+  color: v.$white-ff;
   max-width: 336px;
   height: 202px;
   background-image: url("/public/img/girl-mob.png");
@@ -80,7 +78,7 @@
   gap: 8px;
   align-items: center;
   padding: 0 16px 0 10px;
-  background-color: #0000000d;
+  background-color: v.$color-trend;
   border-radius: 16px;
 }
 .footb-cont {
@@ -94,7 +92,7 @@
   width: 60px;
   height: 20px;
   border-radius: 2px;
-  background-color: #25bb1e;
+  background-color: v.$background-green;
 }
 .side-text {
   padding-top: 54px;
@@ -108,7 +106,7 @@
   display: flex;
   padding-top: 12px;
   gap: 15px;
-  color: #ffffffb2;
+  color: v.$color-comment;
 }
 .icon-cont-side {
   display: flex;

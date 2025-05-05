@@ -64,7 +64,7 @@
   position: absolute;
   top: -2px;
   right: -2px;
-  background-color: #fadb00;
+  background-color: v.$yellow-color;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -76,9 +76,9 @@
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: #ff4122;
-  color: #ffffff;
-  border: 2px solid #000000;
+  background-color: v.$red-color;
+  color: v.$white-ff;
+  border: 2px solid v.$background-color;
   font-size: 10px;
   font-weight: bold;
   border-radius: 50%;
@@ -97,7 +97,7 @@
 .radio-cont {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: v.$white-ff;
   font-weight: 600;
   font-size: 14px;
   @include mixins.viewport-desktop {
@@ -114,8 +114,8 @@
 .name {
   width: 28px;
   height: 28px;
-  color: #ffffff;
-  background-color: #31c26b;
+  color: v.$white-ff;
+  background-color: v.$color-name;
   border-radius: 50%;
   display: flex;
   align-items: center;

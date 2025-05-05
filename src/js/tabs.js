@@ -22,8 +22,6 @@ const renderTable = async (type, targetTable) => {
 
   targetTable.innerHTML = "";
 
-  // const headers = ["Игры", "В", "Н", "П", "З-П", "Форма", "Очки"];
-
   const headers = [
     `<span class="header-full">Игры</span><span class="header-short">И</span>`,
     `<span class="header-full">В</span><span class="header-short">В</span>`,
@@ -72,7 +70,7 @@ const renderTable = async (type, targetTable) => {
             : "last";
 
         return `<tr>
-        <td> <span class="rank-td ${rankClass}">${
+        <td class="first-td"> <span class="rank-td ${rankClass}">${
           index + 1
         }<span class="tooltip">Лига чемпионов</span></span></td>
           <td class="logo-td"><img src="${t.logo}" alt="${t.name.charAt(
@@ -96,47 +94,6 @@ const renderTable = async (type, targetTable) => {
 
   cachedTables[type] = true;
 };
-
-// const renderTable = async (type, targetTable) => {
-//   const data = await fetchTeams();
-//   let grouped = {};
-
-//   if (type === "home" || type === "away") {
-//     const split = splitHomeAway(data);
-//     const selected = split[type];
-//     selected.forEach((team) => {
-//       if (!grouped[team.group]) grouped[team.group] = [];
-//       grouped[team.group].push(team);
-//     });
-//   } else {
-//     data.forEach((team) => {
-//       if (!grouped[team.group]) grouped[team.group] = [];
-//       grouped[team.group].push(team);
-//     });
-//   }
-
-//   targetTable.innerHTML = "";
-
-//   Object.entries(grouped).forEach(([groupName, teams]) => {
-//     teams.sort((a, b) => b.points - a.points);
-//     const table = document.createElement("table");
-
-//     const thead = `<thead><tr><th>Name</th><th>Points</th></tr></thead>`;
-//     const rows = teams
-//       .map(
-//         (t) => `<tr>
-//           <td>${t.name}<span class="tooltip">${t.description || ""}</span></td>
-//           <td>${t.points}</td>
-//         </tr>`
-//       )
-//       .join("");
-
-//     table.innerHTML = thead + `<tbody>${rows}</tbody>`;
-//     targetTable.appendChild(table);
-//   });
-
-//   cachedTables[type] = true;
-// };
 
 document.addEventListener("DOMContentLoaded", async () => {
   const generalTab = document.querySelector('.tab[data-type="general"]');

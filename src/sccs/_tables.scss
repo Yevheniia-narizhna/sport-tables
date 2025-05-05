@@ -1,27 +1,22 @@
 @use "mixins";
+@use "variables" as v;
 
 .head-tabl {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: v.$background-head;
+  color: v.$white-ff;
   font-size: 12px;
   font-weight: 500;
-  //   width: 100%;
   height: 28px;
   @include mixins.viewport-desktop {
     font-weight: 400;
   }
 }
-// .table-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-// }
 .group-table {
   width: 100%;
   margin-bottom: 8px;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px v.$table-color;
   border-collapse: collapse;
 }
 .form-td,
@@ -71,34 +66,34 @@
   width: 20px;
   height: 20px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
   align-items: center;
 }
 .rank-td.first,
 .rank-td.second,
 .rank-td.third {
-  color: #ffffff;
+  color: v.$white-ff;
   border-radius: 50%;
 }
 .rank-td.first,
 .rank-td.second {
-  background-color: #2173d2;
+  background-color: v.$blue-mob;
   @include mixins.viewport-desktop {
-    background-color: #00b86c;
+    background-color: v.$green-deskt;
   }
 }
 
 .rank-td.third {
-  background-color: #2ea2e5;
+  background-color: v.$bl-mob-second;
   @include mixins.viewport-desktop {
-    background-color: #3188ff;
+    background-color: v.$bl-deskt-second;
   }
 }
 .tooltip {
   display: none;
   position: absolute;
-  background-color: #333;
-  color: #fff;
+  background-color: v.$background-head;
+  color: v.$white-ff;
   padding: 5px;
   border-radius: 4px;
   font-size: 12px;
@@ -150,4 +145,11 @@
 }
 .points-td {
   font-weight: 700;
+}
+.first-td {
+  width: 24px;
+  padding-left: 4px;
+}
+.logo-td {
+  width: 80px;
 }

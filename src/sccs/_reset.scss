@@ -1,5 +1,24 @@
+@use "variables" as v;
+
 * {
   box-sizing: border-box;
+}
+body {
+  background-color: v.$white-ff;
+  font-family: "Roboto", sans-serif;
+  color: v.$black-cc;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  animation: ani 1.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h1,
@@ -28,19 +47,16 @@ button {
   border-radius: 6px;
   font-size: 14px;
   height: 32px;
-  color: #0000008a;
+  color: v.$black-8a;
 }
 table {
   display: table;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
   box-sizing: border-box;
   text-indent: initial;
   unicode-bidi: isolate;
   border-spacing: 0;
-  // border-radius: 6px;
-  // overflow: hidden;
-  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 td {
   text-align: center;
@@ -48,22 +64,14 @@ td {
   vertical-align: middle;
 }
 tbody tr {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid v.$border-color;
 }
 th {
   border: none;
   text-align: center;
 }
-// thead {
-//   border-bottom: none !important;
-//   box-shadow: none !important;
-// }
-
-// thead tr,
-// thead th {
-//   border: none !important;
-//   box-shadow: none !important;
-// }
-// thead tr:last-child {
-//   border-bottom: none !important;
-// }
+thead,
+tr {
+  border: none;
+  box-shadow: none;
+}
